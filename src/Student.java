@@ -1,4 +1,6 @@
-
+/**
+ * Student object contains information about a single student
+ */
 public class Student {
 	private String name;
 	private String address;
