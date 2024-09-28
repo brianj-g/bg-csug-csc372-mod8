@@ -47,7 +47,7 @@ public class StudentGradeBook {
 		while (address.isEmpty()) {
 			System.out.print("Address: ");
 			address = s.nextLine();
-			if (name.isEmpty()) {
+			if (address.isEmpty()) {
 				System.out.println("Address is empty. Please enter the student's address.");
 			}
 		}
