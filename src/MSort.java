@@ -90,13 +90,13 @@ public class MSort {
 	}
 	
 	/**
-	 * A main method for testing purposes
+	 * A method for testing the sort
 	 */
-	public static void main(String[] args) {
+	public static void testMain() {
         // Create a LinkedList to store Student objects
         LinkedList<Student> studentList = new LinkedList<>();
         
-        // Create and add 10 Student objects to the list
+        // Create and add 10 Student objects to the list (names and addresses randomly generated)
         studentList.add(new Student("Eve", "202 Birch St", 3.9));
         studentList.add(new Student("Judy", "707 Spruce St", 3.0));
         studentList.add(new Student("Charlie", "789 Pine Rd", 3.2));

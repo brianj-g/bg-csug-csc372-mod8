@@ -60,6 +60,9 @@ public class StudentGradeBook {
 	
 	public static void main(String[] args) {
 		// TODO: Instantiate Linked List; Input loop; Sort list; Output to file;
+		
+		// Strictly for testing
+		MSort.testMain();
 
 	}
 
