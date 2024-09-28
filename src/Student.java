@@ -7,6 +7,15 @@ public class Student {
 	private double GPA;
 	
 	/**
+	 * Default constructor for list population
+	 */
+	public Student(String name, String address, double GPA) {
+		this.name = name;
+		this.address = address;
+		this.GPA = GPA;
+	}
+	
+	/**
 	 * @return the student's name
 	 */
 	public String getName() {
