@@ -15,6 +15,13 @@ public class Student {
 		this.GPA = GPA;
 	}
 	
+	/** 
+	 * Default constructor override for empty object
+	 */
+	public Student() {
+		// Creates empty object
+	}
+	
 	/**
 	 * @return the student's name
 	 */
