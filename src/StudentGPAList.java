@@ -96,19 +96,30 @@ public class StudentGPAList {
 		PrintWriter outFS = null;
 		String outputFilename = "student_list.txt";
 		
+		String input;
 		int menuOption = 0;
 		Scanner s = new Scanner(System.in);
 		
 		// Prompt user with menu options until the exit case is entered
 		do {
 			menu();
-			try {
-				menuOption =  s.nextInt();
-			} catch (InputMismatchException e) {
-				s.nextLine();
-				System.out.println("Invalid input");
+			input =  s.nextLine().trim();
+			// Check for empty input
+			if (input.isEmpty()) {
+                System.out.println("Invalid input. Please enter a valid menu option.");
+                System.out.println();
+                continue;
 			}
+			// Check to ensure the the menu option can be parsed as integer
+            try {
+                menuOption = Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter a valid integer.");
+                System.out.println();
+                continue;
+            }
 
+            // Check for integer menu options 1-4
 			System.out.println();
 			switch (menuOption){
 				case 1:
