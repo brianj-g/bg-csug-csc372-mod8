@@ -7,7 +7,6 @@
  * October 6, 2024
  * 
  */
-
 /**
  * Student object contains information about a single student
  */
