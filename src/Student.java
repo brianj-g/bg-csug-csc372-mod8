@@ -1,3 +1,13 @@
+/*
+ * Portfolio Final Program Option 1: Student Grades
+ * Brian Gunther
+ * CSC372: Programming II
+ * Colorado State University Global
+ * Dr. Vanessa Cooper
+ * October 6, 2024
+ * 
+ */
+
 /**
  * Student object contains information about a single student
  */

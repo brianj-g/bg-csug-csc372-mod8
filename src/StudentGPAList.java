@@ -1,3 +1,13 @@
+/*
+ * Portfolio Final Program Option 1: Student Grades
+ * Brian Gunther
+ * CSC372: Programming II
+ * Colorado State University Global
+ * Dr. Vanessa Cooper
+ * October 6, 2024
+ * 
+ */
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
@@ -56,9 +66,9 @@ public class StudentGPAList {
                     System.out.print("Invalid input. Please enter a value between 0.0 and 4.0: ");
                     s.nextLine();
                 } else {
-                	// Use the BigDecimal class to perform truncation to 2 decimals
-                	BigDecimal roundingCheck = new BigDecimal(gpa);
-                	gpa = roundingCheck.setScale(2, RoundingMode.DOWN).doubleValue();
+                	// Use the BigDecimal class to perform truncation to 3 decimals
+                	BigDecimal roundingCheck = BigDecimal.valueOf(gpa);
+                	gpa = roundingCheck.setScale(3, RoundingMode.DOWN).doubleValue();
                     student.setGPA(gpa);
                 }	
 			} catch (InputMismatchException e) {
@@ -158,6 +168,8 @@ public class StudentGPAList {
 					}
 					outFS.flush();
 					outFS.close();
+					System.out.println("Student list was saved to " + outputFilename);
+					System.out.println();
 					break;
 					
 				case 4:
